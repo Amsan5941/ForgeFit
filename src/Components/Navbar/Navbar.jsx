@@ -4,6 +4,7 @@ import './Navbar.css'
 const Navbar = () => {
   return (
     <div>
+      <p>LOL</p>
       
     </div>
   )
