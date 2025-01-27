@@ -19,7 +19,8 @@ const Navbar = () => {
         <div className={`navbar-links ${isOpen ? "active" : ""}`}>
           <a href="#home">Home</a>
           <a href="#about">About</a>
-          <a href="#services">Services</a>
+          <a href="tracker">Tracker</a>
+          <a href="chat">Chat Bot</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
