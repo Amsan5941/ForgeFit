@@ -1,18 +1,18 @@
 /* General navbar styles */
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 1rem 2rem;
     background-color: #333;
     color: white;
   }
   
-  .navbar-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
   
+  /* Align navbar links to the left */
   .navbar-links {
     display: flex;
     gap: 1.5rem;
@@ -55,7 +55,7 @@
       flex-direction: column;
       position: absolute;
       top: 60px;
-      right: 20px;
+      left: 20px;
       background-color: #333;
       padding: 1rem;
       border-radius: 5px;
