@@ -1,7 +1,7 @@
 /* Container for positioning the Login Button */
 .login-button-container {
     position: fixed;
-    top: 20px;
+    top: 7px;
     right: 20px;
   }
   
