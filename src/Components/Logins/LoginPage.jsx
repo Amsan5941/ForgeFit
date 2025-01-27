@@ -1,26 +1,33 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Login.css';
 
 const LoginPage = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="LoginPage">
+    <div className="overlay">
+      <div className="login-modal">
+        <button className="close-button" onClick={() => navigate('/')}>
+          ✖
+        </button>
         <h1 className="LoginLogo">Login Page</h1>
         <div className="mb-4">
-            <input
-                type='email'
-                placeholder='Email'
-                className='border rounded-lg p-2 mb-4 w-80'
-            />
-            <input
-                type='password'
-                placeholder='Password'
-                className='border rounded-lg p-2 mb-4 w-80'
-            />
+          <input
+            type="email"
+            placeholder="Email"
+            className="input-field"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            className="input-field"
+          />
         </div>
-        <button className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
-            Login
-        </button>
+        <button className="login-button">Login</button>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default LoginPage
+export default LoginPage;

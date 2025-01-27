@@ -1,19 +1,20 @@
-import React from 'react'
-import './Login.css'
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Login.css';
 
 const LoginButton = () => {
-    const navigate = useNavigate(); // Hook to programmatically navigate
-  return (
-    <div className="LoginBut">
-        <button
-            className="LoginButton"
-            onClick={() =>navigate('/login')}
-        >
-            Login
-        </button>
-    </div>
-  )
-}
+  const navigate = useNavigate();
 
-export default LoginButton
+  return (
+    <div className="login-button-container">
+      <button
+        className="login-toggle-button"
+        onClick={() => navigate('/login')}
+      >
+        Login
+      </button>
+    </div>
+  );
+};
+
+export default LoginButton;
