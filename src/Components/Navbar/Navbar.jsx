@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css"; // Import CSS for styling
+import LoginButton from "../Logins/LoginButton";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +23,7 @@ const Navbar = () => {
           <a href="tracker">Tracker</a>
           <a href="chat">Chat Bot</a>
           <a href="#contact">Contact</a>
+          <LoginButton></LoginButton>
         </div>
       </div>
     </nav>
