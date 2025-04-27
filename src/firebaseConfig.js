@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database"; // <-- CHANGE THIS
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBlMiNagigm2aZzVLfwqo-573SM7By1Mvg",
+  apiKey: "",
   authDomain: "forgefit-fb1c6.firebaseapp.com",
   databaseURL: "https://forgefit-fb1c6-default-rtdb.firebaseio.com", // <-- IMPORTANT for Realtime Database
   projectId: "forgefit-fb1c6",
