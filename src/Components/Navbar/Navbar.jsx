@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Navbar.css"; // Import CSS for styling
 import LoginButton from "../Logins/LoginButton";
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,12 +20,11 @@ const Navbar = () => {
           <span className="bar"></span>
         </div>
         <div className={`navbar-links ${isOpen ? "active" : ""}`}>
-          <a href="/">Home</a>
-          <a href="#about">About</a>
-          <a href="#tracker">Tracker</a>
-          <a href="#chat">Chat Bot</a>
-          <a href="#contact">Contact</a>
-          <a href="\write">Write</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/tracker">Tracker</Link>
+          <Link to="/chat">Chat Bot</Link>
+          <Link to="/contact">Contact</Link>
           <LoginButton></LoginButton>
         </div>
       </div>
