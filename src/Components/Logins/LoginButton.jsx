@@ -7,21 +7,21 @@ import './Login.css';
 const LoginButton = () => {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    async function testConnection() {
-      try {
-        await set(ref(db, 'testConnection/'), {
-          name: "Test User",
-          createdAt: new Date().toISOString()
-        });
-        console.log("Data written successfully to Realtime Database!");
-      } catch (e) {
-        console.error("Error writing to database: ", e);
-      }
-    }
+  // useEffect(() => {
+  //   async function testConnection() {
+  //     try {
+  //       await set(ref(db, 'testConnection/'), {
+  //         name: "Test User",
+  //         createdAt: new Date().toISOString()
+  //       });
+  //       console.log("Data written successfully to Realtime Database!");
+  //     } catch (e) {
+  //       console.error("Error writing to database: ", e);
+  //     }
+  //   }
 
-    testConnection();
-  }, []);
+  //   testConnection();
+  // }, []);
 
   return (
     <div className="login-button-container">
@@ -29,7 +29,7 @@ const LoginButton = () => {
         className="login-toggle-button"
         onClick={() => navigate('/login')}
       >
-        Login
+        Sign In
       </button>
     </div>
   );

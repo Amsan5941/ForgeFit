@@ -11,7 +11,7 @@ const LoginPage = () => {
         <button className="close-button" onClick={() => navigate('/')}>
           ✖
         </button>
-        <h1 className="LoginLogo">Login Page</h1>
+        <h1 className="LoginLogo">Sign In Page</h1>
         <div className="mb-4">
           <input
             type="email"
@@ -24,7 +24,14 @@ const LoginPage = () => {
             className="input-field"
           />
         </div>
-        <button className="login-button">Login</button>
+        <button className="login-button">Sign In</button>
+
+        <div className="mb-4">
+          Don't have an account? {' '}
+          <span className="register-link" onClick={()=> navigate('/register')}>
+          Register
+          </span>
+        </div>
       </div>
     </div>
   );

@@ -92,3 +92,15 @@
     color: #ff0000;
   }
   
+  .register-link {
+    color: #007bff;           /* Bootstrap blue */
+    cursor: pointer;          /* Makes it look clickable */
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  
+  .register-link:hover {
+    color: #0056b3;           /* Darker blue on hover */
+  }
+  
+  
