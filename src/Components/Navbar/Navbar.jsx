@@ -20,13 +20,13 @@ const Navbar = () => {
           <span className="bar"></span>
         </div>
         <div className={`navbar-links ${isOpen ? "active" : ""}`}>
-          <Link to="/">Home</Link>
+          <Link to="/home">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/tracker">Tracker</Link>
           <Link to="/chat">Chat Bot</Link>
           <Link to="/contact">Contact</Link>
-          <LoginButton></LoginButton>
         </div>
+        <LoginButton></LoginButton>
       </div>
     </nav>
   );

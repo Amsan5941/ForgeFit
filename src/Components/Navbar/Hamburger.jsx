@@ -8,10 +8,8 @@ const Hamburger = () => {
         <div className='hamburger'>
             <div className="burger 1" />
             <div className="burger 2" />
-            <div className="burger 3" />
-            
+            <div className="burger 3" />  
         </div>
-      
     </div>
   )
 }
