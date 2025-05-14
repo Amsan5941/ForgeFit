@@ -21,11 +21,8 @@ const App = () => {
         <Route path="/tracker" element={<Tracker />}/>
         <Route path="/chat" element={<ChatBot />}/>
         <Route path="/Contact" element={<Contact />}/>
-
         <Route path="/register" element={<RegisterPage />} />
       </Routes>
-
-
     </div>
   );
 };

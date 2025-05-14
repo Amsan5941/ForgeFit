@@ -22,7 +22,6 @@ const LoginButton = () => {
 
   //   testConnection();
   // }, []);
-
   return (
     <div className="login-button-container">
       <button
