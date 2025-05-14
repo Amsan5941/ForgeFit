@@ -2,8 +2,10 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
+
 const LoginPage = () => {
   const navigate = useNavigate();
+  
 
   return (
     <div className="overlay">
