@@ -51,8 +51,11 @@ const LoginPage = () => {
 
       // After 2.5 seconds, navigate to the tracker page
       setTimeout(() => {
-        navigate('/');
-      }, 2500);
+      navigate('/');
+      setTimeout(() => {
+        window.location.reload();
+      }, 100); // Small delay to ensure navigation happens first
+    }, 2500);
     } catch (error) {
       console.error('Login error:', error);
       setError('Something went wrong. Please try again.');
