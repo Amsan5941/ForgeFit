@@ -1,5 +1,5 @@
 .home-container {
-  font-family: 'Arial Black', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #222;
   background-color: #fff;
   line-height: 1.6;
@@ -26,7 +26,7 @@
 }
 
 .hero span {
-  color: #ff4040;
+  color: #87ceeb;
 }
 
 .hero p {
@@ -35,7 +35,7 @@
 }
 
 .cta-button {
-  background-color: #ff4040;
+  background-color: #87ceeb;
   color: white;
   padding: 12px 30px;
   border: none;

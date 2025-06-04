@@ -16,25 +16,25 @@ const Home = () => {
       <section className="about">
         <h2>What is Forge Fit?</h2>
         <p>
-          Forge Fit is more than just a gym — it’s a movement. We help you build strength, endurance, and confidence through expert coaching and a supportive community.
+          Forge Fit is the new generation of fitness tracking — empowering people to integrate AI into their fitness journey. From personalized workouts to intelligent progress tracking, we’re redefining how you train, recover, and grow.
         </p>
       </section>
 
       {/* Programs Section */}
       <section className="programs">
-        <h2>Our Programs</h2>
+        <h2>What We Offer</h2>
         <div className="program-cards">
           <div className="card">
-            <h3>Strength Training</h3>
-            <p>Build lean muscle with personalized resistance programs.</p>
+            <h3>Fitness Tracking</h3>
+            <p>Track unlimited workouts with ease. Log exercises, add custom rest timers, and jot down notes to monitor your progress and stay consistent every step of the way.</p>
           </div>
           <div className="card">
-            <h3>HIIT & Conditioning</h3>
-            <p>Burn fat fast with high-intensity interval training.</p>
+            <h3>Personal Workout Assistance</h3>
+            <p>Our intelligent chatbot designs personalized workout plans tailored to your body type, fitness level, and goals — giving you expert guidance without the guesswork.</p>
           </div>
           <div className="card">
             <h3>Nutrition Coaching</h3>
-            <p>Fuel your body right with meal plans tailored to your goals.</p>
+            <p>Achieve better results with AI-powered nutrition support. Get customized meal plans and diet advice to fuel your training and transform your health.</p>
           </div>
         </div>
       </section>
