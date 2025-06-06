@@ -1,130 +1,23 @@
-/* Container for positioning the Login Button */
+/* Fix: keep inside navbar */
 .login-button-container {
-    position: fixed;
-    top: 7px;
-    right: 20px;
-  }
-  
-  /* Sky Blue Oval Login Button */
-  .login-toggle-button {
-    background-color: #87ceeb; /* Sky Blue */
-    color: white;
-    border: none;
-    border-radius: 50px; /* Oval Shape */
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  }
-  
-  .login-toggle-button:hover {
-    background-color: #1e90ff; /* Slightly darker blue */
-  }
-
-  /* Overlay to darken the background */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-  }
-  
-  /* Modal styling */
-  .login-modal {
-    position: relative;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 400px;
-    max-width: 90%;
-  }
-  
-  .LoginLogo {
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .input-field {
-    display: block;
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin: 10px auto;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .login-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .login-button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Close button styling */
-  .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  .close-button:hover {
-    color: #ff0000;
-  }
-  
-  .register-link {
-    color: #007bff;           /* Bootstrap blue */
-    cursor: pointer;          /* Makes it look clickable */
-    text-decoration: underline;
-    font-weight: 500;
-  }
-  
-  .register-link:hover {
-    color: #0056b3;           /* Darker blue on hover */
-  }
-  
-  .login-button-container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 10px;
 }
 
-/* Container for Welcome text and Logout button */
+/* Welcome + Logout layout */
 .user-info {
   display: flex;
   align-items: center;
-  gap: 10px; /* space between Welcome and Log Out button */
+  gap: 10px;
 }
 
-/* Welcome text style */
 .welcome-text {
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   font-weight: bold;
 }
 
-/* Log Out button style */
 .logout-button {
   background-color: #ff4d4f;
   color: white;
@@ -133,14 +26,12 @@
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .logout-button:hover {
   background-color: #d9363e;
 }
 
-/* Sign In button style */
 .login-toggle-button {
   background-color: #4cafef;
   color: white;
@@ -149,7 +40,6 @@
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .login-toggle-button:hover {

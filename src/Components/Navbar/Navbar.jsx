@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import "./Navbar.css"; // Import CSS for styling
+import "./Navbar.css";
 import LoginButton from "../Logins/LoginButton";
 import { Link } from "react-router-dom";
-
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,19 +13,23 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="hamburger" onClick={toggleMenu}>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
+        <div className="left">
+          <div className="hamburger" onClick={toggleMenu}>
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </div>
+          <div className={`navbar-links ${isOpen ? "active" : ""}`}>
+            <Link to="/home">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/tracker">Tracker</Link>
+            <Link to="/chat">Chat Bot</Link>
+            <Link to="/contact">Contact</Link>
+          </div>
         </div>
-        <div className={`navbar-links ${isOpen ? "active" : ""}`}>
-          <Link to="/home">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/tracker">Tracker</Link>
-          <Link to="/chat">Chat Bot</Link>
-          <Link to="/contact">Contact</Link>
+        <div className="right">
+          <LoginButton />
         </div>
-        <LoginButton></LoginButton>
       </div>
     </nav>
   );
