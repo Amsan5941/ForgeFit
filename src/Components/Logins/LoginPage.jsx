@@ -43,7 +43,7 @@ const LoginPage = () => {
       setSuccessMessage(`Welcome back, ${userData.name}! 🎉`);
 
       setTimeout(() => {
-        window.location.href = '/';
+        window.location.href = '/home';
       }, 1500);
     } catch (error) {
       console.error('Login error:', error);
