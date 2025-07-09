@@ -25,8 +25,9 @@ const Navbar = () => {
           <Link to="/tracker">Tracker</Link>
           <Link to="/chat">Chat Bot</Link>
           <Link to="/contact">Contact</Link>
+          <LoginButton></LoginButton>
         </div>
-        <LoginButton></LoginButton>
+        
       </div>
     </nav>
   );
