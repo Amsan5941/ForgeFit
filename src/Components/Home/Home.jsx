@@ -9,7 +9,7 @@ const Home = () => {
       <section className="hero">
         <h1>Unleash Your Power at <span>Forge Fit</span></h1>
         <p>Train. Transform. Triumph.</p>
-        <button className="cta-button">Join Now</button>
+        
       </section>
 
       {/* About Section */}
