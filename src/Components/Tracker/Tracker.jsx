@@ -95,7 +95,7 @@ const Tracker = () => {
       <form className="tracker-form" onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Machine Name"
+          placeholder="Exercise Name"
           value={machine}
           onChange={e => setMachine(e.target.value)}
           required
