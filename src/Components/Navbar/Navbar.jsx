@@ -23,6 +23,7 @@ const Navbar = () => {
           <Link to="/home">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/tracker">Tracker</Link>
+          <Link to="/history">History</Link>
           <Link to="/chat">Chat Bot</Link>
           <Link to="/contact">Contact</Link>
           <LoginButton></LoginButton>
