@@ -1,0 +1,71 @@
+.about-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.about-banner {
+  background-image: url('/src/assets/gym-banner.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.about-subtitle {
+  font-size: 20px;
+  color: #ccc;
+}
+
+.about-section {
+  
+  padding: 60px 20px;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.about-content h2 {
+  color: #ff3c3c;
+  margin-top: 30px;
+  font-size: 26px;
+}
+
+.about-content p,
+.about-content li {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+.about-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+
+body {
+  background-color: #1e1e1e;;
+}
