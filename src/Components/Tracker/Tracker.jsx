@@ -18,6 +18,9 @@ const Tracker = () => {
   const userEmail = localStorage.getItem('userEmail');
   const encodeEmail = (email) => email ? email.replace(/\./g, ',') : null;
 
+  // Get today's date string in yyyy-mm-dd format
+  const todayStr = new Date().toISOString().slice(0, 10);
+
   // Fetch user's workouts on mount and listen for changes
   useEffect(() => {
     if (!userEmail) return;
@@ -25,15 +28,20 @@ const Tracker = () => {
     const unsubscribe = onValue(userRef, (snapshot) => {
       const data = snapshot.val();
       if (data) {
-        // Convert object to array, newest first
-        const workouts = Object.values(data).sort((a, b) => new Date(b.time) - new Date(a.time));
+        // Only show entries from today
+        const workouts = Object.values(data).filter(entry => {
+          if (!entry.time) return false;
+          const entryDate = new Date(entry.time);
+          const entryDateStr = entryDate.toISOString().slice(0, 10);
+          return entryDateStr === todayStr;
+        }).sort((a, b) => new Date(b.time) - new Date(a.time));
         setEntries(workouts);
       } else {
         setEntries([]);
       }
     });
     return () => unsubscribe();
-  }, [userEmail]);
+  }, [userEmail, todayStr]);
 
   // Timer effect
   useEffect(() => {
