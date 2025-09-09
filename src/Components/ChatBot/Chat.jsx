@@ -44,34 +44,38 @@ const Chat = () => {
   };
 
   return (
-    <div className="chat-box">
-      <div className="chat-messages" ref={logRef}>
-        {messages.map((msg, i) => {
-          const cls = msg.role === "user" ? "user" : "bot";
-          return (
-            <div key={i} className={`chat-message ${cls}`}>
-              <p>{msg.content}</p>
-            </div>
-          );
-        })}
-      </div>
+    <div className="chat-page">
+      <div className="chat-container">
+        <div className="chat-box">
+          <div className="chat-messages" ref={logRef}>
+            {messages.map((msg, i) => {
+              const cls = msg.role === "user" ? "user" : "bot";
+              return (
+                <div key={i} className={`chat-message ${cls}`}>
+                  <p>{msg.content}</p>
+                </div>
+              );
+            })}
+          </div>
 
-      <div className="chat-input-area">
-        <input
-          className="chat-input"
-          value={userInput}
-          placeholder={loading ? "Thinking..." : "Type your message..."}
-          onChange={(e) => setUserInput(e.target.value)}
-          onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-          disabled={loading}
-        />
-        <button
-          className="chat-send-button"
-          onClick={sendMessage}
-          disabled={loading}
-        >
-          {loading ? "..." : "Send"}
-        </button>
+          <div className="chat-input-area">
+            <input
+              className="chat-input"
+              value={userInput}
+              placeholder={loading ? "Thinking..." : "Type your message..."}
+              onChange={(e) => setUserInput(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && sendMessage()}
+              disabled={loading}
+            />
+            <button
+              className="chat-send-button"
+              onClick={sendMessage}
+              disabled={loading}
+            >
+              {loading ? "..." : "Send"}
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
