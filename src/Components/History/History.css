@@ -1,28 +1,60 @@
-/* History.css - Styles for the History page */
+/* History.css - Match Chat page colors and style, but keep standard layout */
 .history-container {
-  max-width: 700px;
-  margin: 2rem auto;
-  padding: 1rem;
-  background: #fff;
-  border-radius: 8px;
+  width: 90vw;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  padding: 32px 24px 24px 24px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.history-title {
+  text-align: center;
+  color: #1e90ff;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .history-table {
-  margin-top: 2rem;
-}
-
-.history-table table {
   width: 100%;
   border-collapse: collapse;
+  background: transparent;
 }
 
 .history-table th,
 .history-table td {
-  border: 1px solid #ddd;
-  padding: 8px;
+  padding: 12px 8px;
   text-align: left;
+  font-size: 16px;
+  line-height: 1.6;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .history-table th {
-  background-color: #f2f2f2;
+  background-color: #87ceeb;
+  color: #fff;
+  font-weight: 600;
+}
+
+.history-table tr:last-child td {
+  border-bottom: none;
+}
+
+.history-table td {
+  color: #333;
+}
+
+@media (max-width: 700px) {
+  .history-container {
+    width: 98vw;
+    padding: 8px;
+  }
+  .history-table th,
+  .history-table td {
+    font-size: 14px;
+    padding: 8px 4px;
+  }
 }

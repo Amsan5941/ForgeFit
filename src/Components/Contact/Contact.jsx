@@ -18,9 +18,9 @@ const Contact = () => {
             We are recent university graduates with a passion for fitness, health, and helping others achieve their goals. Our diverse backgrounds in exercise science, nutrition, and coaching allow us to provide expert guidance and support for every member.
           </p>
           <ul>
-            <li><strong>Alex:</strong> Certified Personal Trainer & Nutrition Coach</li>
-            <li><strong>Jordan:</strong> Group Fitness Instructor & Wellness Advocate</li>
-            <li><strong>Taylor:</strong> Strength & Conditioning Specialist</li>
+            <li><strong>Amsan:</strong> Avid Gym Goer & Fitness Enthusiast</li>
+            <li><strong>Risanth:</strong> Gym Rookie</li>
+            <li><strong>Mithuusan:</strong> Avid Gym Goer & Fitness Enthusiast</li>
           </ul>
 
           <h2>Contact Us</h2>
@@ -28,9 +28,9 @@ const Contact = () => {
             Have questions, feedback, or want to join our community? Reach out to us!
           </p>
           <ul>
-            <li><strong>Email:</strong> contact@forgefit.com</li>
-            <li><strong>Phone:</strong> (555) 123-4567</li>
-            <li><strong>Location:</strong> 123 Forge St, Fitness City, USA</li>
+            <li><strong>Email:</strong> forgefitdev@gmail.com</li>
+            <li><strong>Phone:</strong> (647) 781-8616</li>
+            <li><strong>Location:</strong> 350 Victoria St, Toronto ON, Canada</li>
           </ul>
         </div>
       </section>
