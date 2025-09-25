@@ -25,5 +25,4 @@ dist-ssr
 
 .env
 
-# Ignore Firebase config
-firebaseConfig.js
+
