@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import ReactMarkdown from 'react-markdown';
 import "./Chat.css";
 
 const Chat = () => {
@@ -52,7 +53,10 @@ const Chat = () => {
               const cls = msg.role === "user" ? "user" : "bot";
               return (
                 <div key={i} className={`chat-message ${cls}`}>
-                  <p>{msg.content}</p>
+                  {msg.role === "assistant"
+                    ? <ReactMarkdown>{msg.content}</ReactMarkdown>
+                    : <p>{msg.content}</p>
+                  }
                 </div>
               );
             })}
